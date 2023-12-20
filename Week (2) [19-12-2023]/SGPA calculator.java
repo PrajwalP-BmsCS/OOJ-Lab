@@ -73,7 +73,7 @@ class SGPA
             else
             {
                 System.out.println("Enter valid score");
-                --i;
+                break;
             }
         }
     }
