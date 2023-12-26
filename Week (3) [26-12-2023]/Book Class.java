@@ -32,7 +32,7 @@ class Main
 		Book b[]=new Book[n];
 		String name,author;
 		int price,num;
-    sc.nextLine();
+    		sc.nextLine();
 		for(int i=0;i<n;i++){
 			System.out.println("Enter name of book: ");
 			name=sc.nextLine();
@@ -44,6 +44,7 @@ class Main
 			num=sc.nextInt();
 			b[i]= new Book(name,author,price,num);
 		}
+		System.out.println("Book Details: ");
 		for(int i=0;i<n;i++){
 			System.out.println(b[i].toString());
 		}
