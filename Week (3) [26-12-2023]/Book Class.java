@@ -27,7 +27,7 @@ class Main
 	{
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter number of books: ");
+		System.out.println("\nEnter number of books: ");
 		int n=sc.nextInt();
 		Book b[]=new Book[n];
 		String name,author;
