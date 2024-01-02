@@ -32,7 +32,7 @@ class Triangle extends Shape{
             System.out.println("Invalid input for Triangle");
         }
         else{
-        System.out.println("Area of Traingle is "+(dim1*dim2)/2);
+        System.out.println("Area of Triangle is "+(dim1*dim2)/2);
         }
     }
 }
