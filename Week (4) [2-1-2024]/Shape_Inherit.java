@@ -14,7 +14,12 @@ class Rectangle extends Shape{
         super(a,b);
     }
     void printArea(){
-        System.out.println("Area of Rectangle is "+(dim1*dim2));
+        if(dim1<0 || dim2<0){
+            System.out.println("Invalid input for Rectangle");
+        }
+        else{
+        System.out.println("\nArea of Rectangle is "+(dim1*dim2));
+        }
     }
 }
 
@@ -23,7 +28,12 @@ class Triangle extends Shape{
         super(a,b);
     }
     void printArea(){
+        if(dim1<0 || dim2<0){
+            System.out.println("Invalid input for Triangle");
+        }
+        else{
         System.out.println("Area of Traingle is "+(dim1*dim2)/2);
+        }
     }
 }
 
@@ -33,7 +43,12 @@ class Circle extends Shape{
     }
     final double pi=3.14159;
     void printArea(){
+        if(dim1<0 || dim2<0){
+            System.out.println("Invalid input for Circle");
+        }
+        else{
         System.out.println("Area of Circle is "+pi*Math.pow(dim1,2));
+        }
     }
 }
 
