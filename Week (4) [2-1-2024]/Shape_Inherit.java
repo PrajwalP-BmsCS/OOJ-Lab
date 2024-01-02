@@ -33,7 +33,7 @@ class Circle extends Shape{
     }
     final double pi=3.14159;
     void printArea(){
-        System.out.println("Area of Traingle is "+pi*Math.pow(dim1,2));
+        System.out.println("Area of Circle is "+pi*Math.pow(dim1,2));
     }
 }
 
