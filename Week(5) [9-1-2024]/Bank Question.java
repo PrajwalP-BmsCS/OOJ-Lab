@@ -58,8 +58,7 @@ class Sav_acc extends Account {
   }
   void interest() {
     Scanner sc = new Scanner(System.in);
-    System.out.
-    println("Enter time(in years) since conception of account: ");
+    System.out.println("Enter time(in years) since conception of account: ");
     double t = sc.nextDouble();
     amount = balance * (Math.pow((1 + rate / 100.0), t));
     System.out.println("Balance is " + amount);
