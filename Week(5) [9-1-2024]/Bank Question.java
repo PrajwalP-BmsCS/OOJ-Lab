@@ -65,18 +65,7 @@ class Sav_acc extends Account {
     System.out.println("Balance is " + amount);
     balance = amount;
   }
-  void withdraw(double amt) {
-    if (balance < min_bal) {
-      System.out.println("Penalty applied");
-      balance -= penalty;
-    }
-    if (balance > amt) {
-      balance -= amt;
-    } else {
-      System.out.println("Insufficiant funds");
-    }
-
-  }
+ }
 }
 
 class Main {
