@@ -65,7 +65,7 @@ class Sav_acc extends Account {
     balance = amount;
   }
  }
-}
+
 
 class Main {
   public static void main(String s[]) {
