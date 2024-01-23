@@ -1,60 +1,55 @@
 import java.util.Scanner;
 class Student{
-   String name;
-   int reg_no;
-   short sem;
-   float cgpa;
+    int regNo;
+    String fName;
+    short sem;
+    float cgpa;
    
-   Student(){
-       this.reg_no=0;
-       this.name="Invalid";
-       this.sem=0;
-       this.cgpa=0;
-   }
-   
-   Student(String name,int reg_no,short sem,float cgpa){
-       this.reg_no=reg_no;
-       this.name=name;
-       this.sem=sem;
-       this.cgpa=cgpa;
-   }
-   
-   void display(){
-       System.out.println("Registration Number: " + reg_no);
-        System.out.println("Full Name: " + name);
-        System.out.println("Semester: " + sem);
-        System.out.println("CGPA: " + cgpa);
-        System.out.println();
-   }
-}
-class Main{
-    static Student s[]=new Student[5];
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        String name;
-        int reg_no;
-        short sem;
-        float cgpa;
-        for(int i=0;i<1;i++){
-            System.out.println("Enter details of "+(i+1)+" student in order\nName\nRegister Number\nSemester\nCGPA");
-            name=sc.nextLine();
-            reg_no=sc.nextInt();
-            sem=sc.nextShort();
-            cgpa=sc.nextFloat();
-            s[i]=new Student(name,reg_no,sem,cgpa);
-        }
-        
-        for(int i=0;i<5;i++){
-            s[i].display();  
-        }
-        
+    Student(){
+        this.regNo = 0;
+        this.fName = "Nil";
+        this.sem = 1;
+        this.cgpa = 0;
     }
-    
-    public static void sortC(Student s[]){
-        String cgpa[]=new String[5];
-        for(int i=0;i<1;i++){
-            cgpa[i]=Float.toString(s[i].cgpa);
+   
+    Student(int regNo, String fName, short sem, float cgpa){
+        this.regNo = regNo;
+        this.fName = fName;
+        this.sem = sem;
+        this.cgpa = cgpa;
+    }
+   
+    void display(){
+        System.out.print("Register Number: " + regNo);
+        System.out.print("Full Name: " + fName);
+        System.out.print("Semester: " + sem);
+        System.out.print("CGPA: " + cgpa);
+    }
+}
+
+class Main{
+     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Student[] records = new Student[5];
+        for(int i = 0; i < 5; i++){
+            int no;
+            String name;
+            short sem;
+            float cgpa;
+            System.out.println("Enter name: ");
+            name = sc.next();
+            System.out.println("Enter reg no: ");
+            no = sc.nextInt();
+            System.out.println("Enter sem: ");
+            sem = sc.nextShort();
+            System.out.println("Enter cgpa: ");
+            cgpa = sc.nextFloat();
+            records[i] = new Student(no, name, sem, cgpa);
         }
-        System.out.println(cgpa);
+       
+        for (Student student : records) {
+            student.display();
+            System.out.println();
+        }
     }
 }
