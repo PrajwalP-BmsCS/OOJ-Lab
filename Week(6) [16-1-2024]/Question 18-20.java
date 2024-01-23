@@ -1,4 +1,4 @@
-18.
+//Q18.
 public class Main {
     public static void main(String[] args) {
         StringBuffer stringBuffer = new StringBuffer("Hello");
@@ -45,7 +45,7 @@ public class Main {
     }
 }
 
-19.
+//Q19.
 abstract class Bird {
     public abstract void fly();
    
@@ -84,7 +84,7 @@ public class Main {
     }
 }
 
-20.
+//Q20.
 abstract class Shape {
     public abstract double calculateArea();
    
