@@ -50,8 +50,6 @@ public class ExceptionInheritanceDemo {
         Scanner sc=new Scanner(System.in);
         int Fage,Sage;
         try {
-    
-            
             System.out.println("Enter Father's age: ");
             Fage=sc.nextInt();
             Father father = new Father(Fage);
