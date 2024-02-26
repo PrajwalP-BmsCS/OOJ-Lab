@@ -43,6 +43,7 @@ class Main
 			System.out.println("Enter number of pages: ");
 			num=sc.nextInt();
 			b[i]= new Book(name,author,price,num);
+			sc.nextLine();
 		}
 		System.out.println("Book Details: ");
 		for(int i=0;i<n;i++){
