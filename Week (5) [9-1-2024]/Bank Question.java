@@ -4,6 +4,7 @@ class Account {
   int acc_no;
   double balance;
   char c;
+  
   Account(String name, int acc_no, char c) {
     this.c = c;
     this.name = name;
